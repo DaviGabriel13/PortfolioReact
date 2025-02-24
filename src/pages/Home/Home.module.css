@@ -1,4 +1,3 @@
-/* css da page Home */
 .home {
     width: 100%;
     min-height: 260vh;
@@ -20,7 +19,7 @@
 }
 
 .home p {
-    font-size: 3rem; /* 48px */
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -138,7 +137,7 @@
     
 }
 
-/* Fundo azul que sobe com a porcentagem */
+
 .barraProgresso {
     position: absolute;
     bottom: 0;
@@ -158,19 +157,19 @@
     
 }
 
-/* Animação para a barra subir */
+
 .animar {
     transition: height 0.8s ease-in-out;
 }
 
 .porcentagem {
     opacity: 1;
-    color: var(--white); /* Define a cor do texto como preto */
-    font-size: 2rem; /* Ajuste do tamanho */
+    color: var(--white); 
+    font-size: 2rem; 
     font-weight: bold;
    
     position: relative;
-    z-index: 2; /* Mantém o texto visível acima do fundo */
+    z-index: 2; 
 }
 
 .navFlexHabPessoais{
@@ -219,4 +218,239 @@
     transform: scale(1.2);
     transition: 1.2s;
     border: 0.5px solid var(--secondary);
+}
+@media screen and (min-width: 300px) and (max-width:400px){
+    .home {
+        width: 100%;
+        min-height: 190vh;
+    
+        
+        
+    }
+    
+    h2{
+        font-size: 25px !important;
+        margin-bottom: 30px !important;
+    }
+    .homeFront {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3% !important;
+        
+    }
+
+    .home img {
+        
+        height: 200px;
+    }
+
+    .home p {
+        font-size: 2rem; 
+        
+        margin-bottom: 0.5rem;
+    }
+
+    .home h2 {
+        font-size: 2rem; 
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        width: 200px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .fundoImg {
+        width: 210px !important;
+        height: 210px !important;
+        margin-top: 50px;
+        
+    }
+    
+
+    .navFlexHabTec {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cardHabilidadeTecnica {
+        width: 80px !important;
+        height: 80px !important;
+        padding: 10px;
+    }
+
+    .imgHabTec {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .navFlexHabPessoais {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        gap: 4%;
+        margin-top: -5%;
+    }
+
+    .cardHabilidadePessoal {
+        width: 150px !important;
+        height: 160px !important;
+        padding: 20px;
+        margin-bottom: -2%;
+        
+    }
+
+    .tituloHabilidadesPessoais {
+        font-size: 18px;
+        margin-top: 5px;
+        
+    }
+
+    .navFlexHabPessoais .cardHabilidadePessoal .textoHabilidadePessoais {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:410px) and (max-width: 768px) {
+
+    .home {
+        width: 100%;
+        min-height: 150vh;
+    
+        
+        
+    }
+    
+    .homeFront {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3% !important;
+        
+    }
+
+    .home img {
+        
+        height: 200px;
+    }
+
+    .home p {
+        font-size: 2rem; 
+        
+        margin-bottom: 0.5rem;
+    }
+
+    .home h2 {
+        font-size: 2rem; 
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        width: 200px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .fundoImg {
+        width: 210px !important;
+        height: 210px !important;
+        margin-top: 50px;
+        
+    }
+    
+
+    .navFlexHabTec {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cardHabilidadeTecnica {
+        width: 80px !important;
+        height: 80px !important;
+        padding: 10px;
+    }
+
+    .imgHabTec {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .navFlexHabPessoais {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        gap: 4%;
+        margin-top: -5%;
+    }
+
+    .cardHabilidadePessoal {
+        width: 150px !important;
+        height: 160px !important;
+        padding: 20px;
+        margin-bottom: -2%;
+        
+    }
+
+    .tituloHabilidadesPessoais {
+        font-size: 18px;
+        margin-top: 5px;
+        
+    }
+
+    .navFlexHabPessoais .cardHabilidadePessoal .textoHabilidadePessoais {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .homeFront {
+        margin-top: 25%;
+    }
+
+    .home p {
+        font-size: 1.5rem; 
+    }
+
+    .btn {
+        width: 180px;
+        height: 40px;
+        font-size: 0.875rem;
+    }
+
+    .fundoImg {
+        width: 350px;
+        height: 350px;
+    }
+
+    .cardHabilidadeTecnica {
+        width: 140px;
+        height: 140px;
+    }
+
+    .navFlexHabTec {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navFlexHabPessoais {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .cardHabilidadePessoal {
+        width: 220px;
+        height: 160px;
+    }
 }
