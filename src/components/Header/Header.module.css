@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: var(--gray);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header span {
+    font-size: 1.5rem; /* 24px -> 16px = 1rem */
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--white);
+    padding-right: 1.5rem;
+    font-size: 1.125rem; /* 18px */
+}
+
+.header a:hover {
+    color: var(--blue);
+}
+
+.logo{
+    margin-top: 5%;
+}

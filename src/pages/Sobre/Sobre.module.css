@@ -1,0 +1,46 @@
+
+.sobre {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    gap: 5vh;
+    position: absolute;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bio span, .bio strong {
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Bordas animadas para chamar atenção */
+@keyframes borderAnimation {
+    0% { border-color: var(--blue); }
+    50% { border-color: var(--secondary); }
+    100% { border-color: var(--blue); }
+}
+
+.textos h2 {
+    border-bottom: 3px solid var(--blue);
+    padding-bottom: 5px;
+    animation: borderAnimation 2s infinite alternate;
+    margin-bottom: 5%;
+}
+
+span {
+    color: var(--blue);
+    font-weight: bold;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+strong {
+    color: var(--secondary);
+}

@@ -1,0 +1,133 @@
+/* Contêiner flexível para alinhar lado a lado */
+.sectionFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 85vh;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contatos {
+    flex: 1; /* Ocupa metade do espaço */
+    text-align: center;
+}
+
+.contatos h2 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.contatos h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+.contatos p {
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+/* Ícones */
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 10px;
+}
+
+.icone {
+    font-size: 3rem;
+    color: var(--blue);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icone:hover {
+    transform: scale(1.2);
+    
+}
+
+/* Estilização do Formulário */
+.form {
+    flex: 1; /* Ocupa metade do espaço */
+    background: var(--grayCard);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form label {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    background-color: var(--grayCard);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+    color: var(--white);
+    max-height: 160px;
+    max-width: 700px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: var(--blue);
+}
+
+/* Botão de Envio */
+.form button {
+    padding: 12px;
+    background: var(--blue);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+}
+
+h2{
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .sectionFlex {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .contatos, .form {
+        width: 100%;
+    }
+
+    .icones {
+        justify-content: center;
+    }
+}
