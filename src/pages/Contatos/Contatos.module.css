@@ -157,6 +157,7 @@ h2{
    
     max-height: 160px;
     max-width: 260px;
+    min-width: 200px;
 }
    
 }
