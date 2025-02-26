@@ -1,7 +1,7 @@
 
 .sobre {
     width: 100%;
-    min-height: 85vh;
+    height: 85vh;
     display: flex;
     gap: 5vh;
     position: absolute;
@@ -17,7 +17,7 @@
     animation: glow 1.5s infinite alternate;
 }
 
-/* Bordas animadas para chamar atenção */
+
 @keyframes borderAnimation {
     0% { border-color: var(--blue); }
     50% { border-color: var(--secondary); }
@@ -43,4 +43,40 @@ p{
 
 strong {
     color: var(--secondary);
+}
+
+
+@media screen and (min-width:410px) and (max-width: 768px) {
+
+    p{
+        font-size: 12px;
+    }
+    .textos{
+        padding: 20px;
+    }
+    .bio{
+        margin-top: -10%;
+    }
+    h2{
+        font-size: 23px !important;
+    }
+    .sobre{
+        height: 50vh !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p{
+        font-size: 12px;
+    }
+    .textos{
+        padding: 20px;
+    }
+    .bio{
+        margin-top: -10%;
+    }
+   
+    .sobre{
+        height: 50vh !important;
+    }
 }

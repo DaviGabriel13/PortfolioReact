@@ -4,7 +4,7 @@
     background-color: var(--gray);
     color: var(--white);
     font-weight: bold;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem; 
 
     display: flex;
     align-items: center;
@@ -13,26 +13,26 @@
 
 @media screen and (max-width: 1024px) {
     .footer {
-        font-size: 1rem; /* Reduz um pouco o tamanho do texto */
+        font-size: 1rem; 
         height: 45px;
     }
 }
 
-/* Telas pequenas (smartphones em modo paisagem) */
+
 @media screen and (max-width: 768px) {
     .footer {
         font-size: 0.95rem;
         height: auto;
-        padding: 10px 0; /* Garante um espaçamento confortável */
+        padding: 10px 0; 
         text-align: center;
     }
 }
 
-/* Telas muito pequenas (smartphones em modo retrato) */
+
 @media screen and (max-width: 480px) {
     .footer {
         font-size: 0.875rem;
-        flex-direction: column; /* Empilha os elementos caso tenha mais conteúdo */
+        flex-direction: column; 
         padding: 15px 5px;
         height: auto;
         text-align: center;

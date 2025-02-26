@@ -54,3 +54,16 @@
     transition: all .5s;
 }
 
+@media screen and (max-width: 480px) {
+    .card{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:410px) and (max-width: 768px) {
+ .card{
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -18,3 +18,27 @@
 .texto_vermelho {
     font-size: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+    .texto_grande {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto_grande {
+        font-size: 100px;
+    }
+    .texto_vermelho {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto_grande {
+        font-size: 80px;
+    }
+    .texto_vermelho {
+        font-size: 1rem;
+    }
+}

@@ -239,9 +239,11 @@
         
     }
 
-    .home img {
+    .home .imgHome{
         
         height: 200px;
+        border-radius: 20px;
+        box-shadow : 0.5px 1.5px 3px 1.5px;
     }
 
     .home p {
@@ -266,6 +268,8 @@
         width: 210px !important;
         height: 210px !important;
         margin-top: 50px;
+        border-radius: 20px;
+        box-shadow : 0.5px 1.5px 3px 1.5px;
         
     }
     
@@ -333,9 +337,11 @@
         
     }
 
-    .home img {
+    .home .imgHome {
         
         height: 200px;
+        border-radius: 20px;
+        box-shadow : 0.5px 1.5px 3px 1.5px;
     }
 
     .home p {
@@ -360,7 +366,8 @@
         width: 210px !important;
         height: 210px !important;
         margin-top: 50px;
-        
+        box-shadow : 0.5px 1.5px 3px 1.5px;
+        border-radius: 20px;
     }
     
 
@@ -430,6 +437,7 @@
     .fundoImg {
         width: 350px;
         height: 350px;
+
     }
 
     .cardHabilidadeTecnica {

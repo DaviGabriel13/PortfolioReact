@@ -52,7 +52,7 @@ function Home() {
                       </div>
                       <figure>
                         <div className={styles.fundoImg}>
-                          <img className={styles.img_home} src="fotoPerfil.JPG" alt="Imagem de Home" />
+                          <img className={styles.imgHome} src="fotoPerfil.JPG" alt="Imagem de Home" />
                         </div>
                       </figure>
                     </nav>

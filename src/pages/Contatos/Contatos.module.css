@@ -35,7 +35,7 @@
     margin-bottom: 20px;
 }
 
-/* Ícones */
+
 .icones {
     display: flex;
     justify-content: center;
@@ -54,9 +54,9 @@
     
 }
 
-/* Estilização do Formulário */
+
 .form {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1; 
     background: var(--grayCard);
     padding: 20px;
     border-radius: 12px;
@@ -91,7 +91,7 @@
     border-color: var(--blue);
 }
 
-/* Botão de Envio */
+
 .form button {
     padding: 12px;
     background: var(--blue);
@@ -115,19 +115,58 @@ h2{
     margin-bottom: 1%;
     font-size: 20px;
 }
-/* Responsividade */
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 480px) {
     .sectionFlex {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
+        gap: 20px;
+        padding: 15px;
+        height: 125vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
     }
 
-    .contatos, .form {
+    .form{
         width: 100%;
+    }
+    .contatos h2 {
+        font-size: 1.5rem;
+    }
+
+    .contatos h3 {
+        font-size: 1.2rem;
+    }
+
+    .contatos p {
+        font-size: 0.9rem;
     }
 
     .icones {
+        gap: 20px;
+    }
+
+    .icone {
+        font-size: 2rem;
+    }
+
+    .form input,
+.form textarea {
+   
+    max-height: 160px;
+    max-width: 260px;
+}
+   
+}
+
+@media screen and (min-width:410px) and (max-width: 768px) {
+    .sectionFlex {
+        gap: 20px;
+        padding: 15px;
+        height: 85vh;
+        width: 80%;
+        display: flex;
         justify-content: center;
     }
 }
