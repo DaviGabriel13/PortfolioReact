@@ -52,7 +52,7 @@
     background-color: var(--secondary);
 }
 
-.img_home{
+.imgHome{
     border-radius: 50px;
     box-shadow : 5px 6px 10px 6px;
     color: var(--secondary);
