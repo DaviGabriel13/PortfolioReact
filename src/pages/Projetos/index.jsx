@@ -8,8 +8,14 @@ function Projetos() {
 
     useEffect(() => {
         const buscarRepositorios = async () => {
-            const response = await fetch('https://api.github.com/users/DaviGabriel13/repos')
+            const response = await fetch('https://api.github.com/users/DaviGabriel13/repos?per_page=100', {
+  headers: {
+    Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`
+
+  }
+})
             const data = await response.json()
+            console.log('Resposta da API:', data);
             setRepositories(data)
         }
         buscarRepositorios()

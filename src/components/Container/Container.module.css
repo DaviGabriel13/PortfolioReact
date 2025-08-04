@@ -10,3 +10,17 @@
     gap: 1rem;
     background-color: #1E1E1E ;
 }
+
+@media screen and (min-width:410px) and (max-width:768px){
+    .container{
+        min-height: 20vh;
+        max-height: 30vh;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container{
+        min-height: 82.2vh;
+        
+    }
+}

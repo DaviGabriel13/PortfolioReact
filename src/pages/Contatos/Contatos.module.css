@@ -2,7 +2,7 @@
 .sectionFlex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     gap: 50px;
     height: 85vh;
     padding: 40px;
@@ -11,10 +11,15 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 50%;
     margin: 0 auto;
+    
+}
+
+.sectionForm{
+    
 }
 
 .contatos {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1;
     text-align: center;
 }
 
@@ -123,14 +128,18 @@ h2{
     .sectionFlex {
         gap: 20px;
         padding: 15px;
-        height: 125vh;
+        min-height: 85vh;
+        max-height: 90vh;
         width: 80%;
         display: flex;
-        justify-content: center;
+        
     }
 
     .form{
         width: 100%;
+    }
+    .contatos{
+        max-height: 20vh;
     }
     .contatos h2 {
         font-size: 1.5rem;
@@ -154,10 +163,11 @@ h2{
 
     .form input,
 .form textarea {
-   
-    max-height: 160px;
+    
+    min-height: 47px;
+    max-height: 100px;
     max-width: 260px;
-    min-width: 200px;
+    min-width: 260px;
 }
    
 }

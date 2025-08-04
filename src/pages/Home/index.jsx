@@ -100,8 +100,8 @@ function Home() {
           <p className={styles.textoHabilidadePessoais}>Tenho organização, principalmente em minha rotina.</p>
           </div>
           <div className={styles.cardHabilidadePessoal}>
-          <h3 className={styles.tituloHabilidadesPessoais}>Adptável</h3><br />
-          <p className={styles.textoHabilidadePessoais}>Sou capaz de me adptar em novas situações.</p>
+          <h3 className={styles.tituloHabilidadesPessoais}>Adaptável</h3><br />
+          <p className={styles.textoHabilidadePessoais}>Sou capaz de me adaptar em novas situações.</p>
           </div>
     </nav>
       

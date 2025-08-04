@@ -9,7 +9,8 @@ function Contatos() {
         <>
            <nav className={styles.sectionFlex}>
                
-            <section><h2>Formulário de Contato</h2>
+            <section className={styles.sectionForm}>
+                <h2>Formulário de Contato</h2>
     <form
       action="https://formsubmit.co/davigabrieltoliveira@gmail.com"
       method="POST"
