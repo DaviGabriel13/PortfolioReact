@@ -14,16 +14,17 @@ function Card({ name, description, html_url, owner }) {
         const fetchLanguages = async () => {
             try {
                 const repoName = html_url.split('github.com/')[1] // ex: "user/repo"
-                const response = await fetch(`https://api.github.com/repos/${repoName}/languages`, {
-            headers: {
-                Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`
-
-            }
-        })
+                const response = await fetch(`https://api.github.com/repos/${repoName}/languages`)
+                
+                if (!response.ok) {
+                    throw new Error(`Erro: ${response.status}`)
+                }
+                
                 const data = await response.json()
                 setLanguages(data)
             } catch (error) {
                 console.error('Erro ao buscar linguagens:', error)
+                setLanguages({})
             }
         }
 
