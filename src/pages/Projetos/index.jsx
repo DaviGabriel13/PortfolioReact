@@ -5,18 +5,29 @@ import styles from './Projetos.module.css'
 function Projetos() {
 
     const [ repositories, setRepositories ] = useState([])
+    const [ loading, setLoading ] = useState(true)
+    const [ error, setError ] = useState(null)
 
     useEffect(() => {
         const buscarRepositorios = async () => {
-            const response = await fetch('https://api.github.com/users/DaviGabriel13/repos?per_page=100', {
-  headers: {
-    Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`
-
-  }
-})
-            const data = await response.json()
-            console.log('Resposta da API:', data);
-            setRepositories(data)
+            try {
+                setLoading(true)
+                const response = await fetch('https://api.github.com/users/DaviGabriel13/repos?per_page=100')
+                
+                if (!response.ok) {
+                    throw new Error(`Erro: ${response.status}`)
+                }
+                
+                const data = await response.json()
+                setRepositories(data)
+                setError(null)
+            } catch (err) {
+                console.error('Erro ao buscar repositórios:', err)
+                setError('Erro ao carregar repositórios')
+                setRepositories([])
+            } finally {
+                setLoading(false)
+            }
         }
         buscarRepositorios()
     }, [])
@@ -25,7 +36,11 @@ function Projetos() {
         <section className={styles.projetos}>
             <h2>Projetos</h2>
             {
-                repositories.length > 0 ? (
+                loading ? (
+                    <p>Carregando repositórios...</p>
+                ) : error ? (
+                    <p>{error}</p>
+                ) : repositories.length > 0 ? (
                     <nav className={styles.centralizarDiv}>
                     <section className={styles.lista}>
                         {
@@ -41,7 +56,7 @@ function Projetos() {
                     </section>
                     </nav>
                 ) : (
-                    <p>Carregando repositórios...</p>
+                    <p>Nenhum repositório encontrado.</p>
                 )
             }
         </section>
